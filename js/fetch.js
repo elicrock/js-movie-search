@@ -21,7 +21,7 @@ function apiSearch(event) {
         let nameItem = item.name || item.title;
         let rating = item.vote_average || 'нет';
         let dataItem = item.first_air_date || item.release_date || 'неизвестна';
-        let imgItem = item.poster_path ? `http://image.tmdb.org/t/p/w500/${item.poster_path}` : 'http://via.placeholder.com/200x300/?text=НЕТ+ИЗОБРАЖЕНИЯ';
+        let imgItem = item.poster_path ? `https://image.tmdb.org/t/p/w500/${item.poster_path}` : 'https://via.placeholder.com/200x300/?text=НЕТ+ИЗОБРАЖЕНИЯ';
         // console.log(nameItem);     
         inner += 
         `<div class="col-12 col-md-4 col-xl-3 text-center cards">
